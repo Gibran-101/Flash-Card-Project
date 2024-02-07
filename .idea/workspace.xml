@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="070a7d36-58ea-4348-92a2-6885b12f3ab1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -71,34 +70,42 @@
       <option name="project" value="LOCAL" />
       <updated>1707185823671</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added the main interface along with buttons">
+      <created>1707275360449</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707275360450</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Added the main interface along with buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the main interface along with buttons" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="401" y="5" key="CommitChangelistDialog2" timestamp="1707185822550">
+    <state x="401" y="5" key="CommitChangelistDialog2" timestamp="1707275358763">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="401" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1707185822550" />
-    <state width="743" height="210" key="GridCell.Tab.0.bottom" timestamp="1707275066741">
+    <state x="401" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1707275358763" />
+    <state width="1511" height="210" key="GridCell.Tab.0.bottom" timestamp="1707286558012">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="743" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1707275066741" />
-    <state width="743" height="210" key="GridCell.Tab.0.center" timestamp="1707275066740">
+    <state width="1511" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1707286558012" />
+    <state width="1511" height="210" key="GridCell.Tab.0.center" timestamp="1707286558011">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="743" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1707275066740" />
-    <state width="743" height="210" key="GridCell.Tab.0.left" timestamp="1707275066739">
+    <state width="1511" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1707286558011" />
+    <state width="1511" height="210" key="GridCell.Tab.0.left" timestamp="1707286558010">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="743" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1707275066739" />
-    <state width="743" height="210" key="GridCell.Tab.0.right" timestamp="1707275066740">
+    <state width="1511" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1707286558010" />
+    <state width="1511" height="210" key="GridCell.Tab.0.right" timestamp="1707286558011">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="743" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1707275066740" />
+    <state width="1511" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1707286558011" />
     <state x="463" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1707185399349">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
