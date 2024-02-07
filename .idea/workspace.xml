@@ -91,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707347700978</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed the untimely flipping of the card bug">
+      <created>1707348191027</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707348191027</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -99,29 +106,30 @@
     <MESSAGE value="Added the main interface along with buttons" />
     <MESSAGE value="Added display_word() function, which will generate a random word from csv French row" />
     <MESSAGE value="Added translate_word() function, to translate the word to its english counterpart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added translate_word() function, to translate the word to its english counterpart" />
+    <MESSAGE value="Fixed the untimely flipping of the card bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the untimely flipping of the card bug" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="401" y="5" key="CommitChangelistDialog2" timestamp="1707347699408">
+    <state x="401" y="5" key="CommitChangelistDialog2" timestamp="1707348189785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="401" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1707347699408" />
-    <state width="1498" height="208" key="GridCell.Tab.0.bottom" timestamp="1707348090070">
+    <state x="401" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1707348189785" />
+    <state width="1513" height="208" key="GridCell.Tab.0.bottom" timestamp="1707349458929">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1498" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1707348090070" />
-    <state width="1498" height="208" key="GridCell.Tab.0.center" timestamp="1707348090068">
+    <state width="1513" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1707349458929" />
+    <state width="1513" height="208" key="GridCell.Tab.0.center" timestamp="1707349458929">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1498" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1707348090068" />
-    <state width="1498" height="208" key="GridCell.Tab.0.left" timestamp="1707348090068">
+    <state width="1513" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1707349458929" />
+    <state width="1513" height="208" key="GridCell.Tab.0.left" timestamp="1707349458929">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1498" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1707348090068" />
-    <state width="1498" height="208" key="GridCell.Tab.0.right" timestamp="1707348090069">
+    <state width="1513" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1707349458929" />
+    <state width="1513" height="208" key="GridCell.Tab.0.right" timestamp="1707349458929">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1498" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1707348090069" />
+    <state width="1513" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1707349458929" />
     <state x="463" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1707343784006">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

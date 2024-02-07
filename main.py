@@ -5,6 +5,8 @@ import random
 BACKGROUND_COLOR = "#B1DDC6"
 csv_data = pandas.read_csv("data/french_words.csv")
 current_index = 0
+
+
 def random_generator():
     return random.randrange(len(csv_data))
 
@@ -57,5 +59,6 @@ right_button_img = PhotoImage(file="images/right.png")
 right_button = Button(image=right_button_img, highlightthickness=0, command=display_word)
 right_button.grid(row=1, column=1)
 
+display_word()
 window.mainloop()
 
