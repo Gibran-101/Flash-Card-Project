@@ -11,15 +11,18 @@ def random_generator():
 
 # ---------------------------- WORDS DISPLAY ------------------------------- #
 def display_word():
+    global current_index, flip_timer
+    # Everytime this function is called the flip_timer value will be set to 0
+    window.after_cancel(flip_timer)
     rand_index = random_generator()
     french_words = csv_data["French"].to_list()
     random_french_word = french_words[rand_index]
     canvas.itemconfig(display_title, text="French", fill="black")
     canvas.itemconfig(current_word, text=random_french_word, fill="black")
     canvas.itemconfig(canvas_img, image=front_img)
-    global current_index
     current_index = rand_index
-    window.after(3000, func=translate_word)
+    # Here the flip_timer is again set to its originality.
+    flip_timer=window.after(3000, func=translate_word)
 
 
 # ---------------------------- TRANSLATION ------------------------------- #
@@ -36,7 +39,8 @@ def translate_word():
 window = Tk()
 window.title("Flash Card")
 window.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
-window.after(3000, func=translate_word)
+# The flip_timer waits for exactly 3000ms and calls the translate_word function.
+flip_timer = window.after(3000, func=translate_word)
 canvas = Canvas(width=800, height=526, highlightthickness=0, bg=BACKGROUND_COLOR)
 front_img = PhotoImage(file="images/card_front.png")
 back_img = PhotoImage(file="images/card_back.png")
