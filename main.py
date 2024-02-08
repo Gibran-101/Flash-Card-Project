@@ -3,38 +3,43 @@ import pandas
 import random
 
 BACKGROUND_COLOR = "#B1DDC6"
-csv_data = pandas.read_csv("data/french_words.csv")
-current_index = 0
-
-
-def random_generator():
-    return random.randrange(len(csv_data))
+current_card = {}
+to_learn = {}
+try:
+    csv_data = pandas.read_csv("data/words_to_learn.csv")
+except FileNotFoundError:
+    modified_data = pandas.read_csv("data/french_words.csv")
+    to_learn = modified_data.to_dict(orient="records")
+else:
+    to_learn = csv_data.to_dict(orient="records")
 
 
 # ---------------------------- WORDS DISPLAY ------------------------------- #
 def display_word():
-    global current_index, flip_timer
+    global flip_timer, current_card
     # Everytime this function is called the flip_timer value will be set to 0
     window.after_cancel(flip_timer)
-    rand_index = random_generator()
-    french_words = csv_data["French"].to_list()
-    random_french_word = french_words[rand_index]
+    current_card = random.choice(to_learn)
     canvas.itemconfig(display_title, text="French", fill="black")
-    canvas.itemconfig(current_word, text=random_french_word, fill="black")
+    canvas.itemconfig(current_word, text=current_card["French"], fill="black")
     canvas.itemconfig(canvas_img, image=front_img)
-    current_index = rand_index
     # Here the flip_timer is again set to its originality.
-    flip_timer=window.after(3000, func=translate_word)
+    flip_timer = window.after(10000, func=translate_word)
 
 
 # ---------------------------- TRANSLATION ------------------------------- #
 def translate_word():
-    rand_index = current_index
     canvas.itemconfig(canvas_img, image=back_img)
-    english_words = csv_data["English"].to_list()
-    random_english_word = english_words[rand_index]
     canvas.itemconfig(display_title, text="English", fill="white")
-    canvas.itemconfig(current_word, text=random_english_word, fill="white")
+    canvas.itemconfig(current_word, text=current_card["English"], fill="white")
+
+
+# ---------------------------- UI SETUP ------------------------------- #
+def is_known():
+    to_learn.remove(current_card)
+    data = pandas.DataFrame(to_learn)
+    data.to_csv("data/words_to_learn.csv", index=False)
+    display_word()
 
 
 # ---------------------------- UI SETUP ------------------------------- #
@@ -42,7 +47,7 @@ window = Tk()
 window.title("Flash Card")
 window.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
 # The flip_timer waits for exactly 3000ms and calls the translate_word function.
-flip_timer = window.after(3000, func=translate_word)
+flip_timer = window.after(10000, func=translate_word)
 canvas = Canvas(width=800, height=526, highlightthickness=0, bg=BACKGROUND_COLOR)
 front_img = PhotoImage(file="images/card_front.png")
 back_img = PhotoImage(file="images/card_back.png")
@@ -56,9 +61,8 @@ wrong_button = Button(image=wrong_button_img, highlightthickness=0, command=disp
 wrong_button.grid(row=1, column=0)
 
 right_button_img = PhotoImage(file="images/right.png")
-right_button = Button(image=right_button_img, highlightthickness=0, command=display_word)
+right_button = Button(image=right_button_img, highlightthickness=0, command=is_known)
 right_button.grid(row=1, column=1)
 
 display_word()
 window.mainloop()
-
